@@ -35,7 +35,7 @@ const CartList = ({ data, setItemLists }: Props) => {
         const substQuantity = () => {
           let updatedData = [...data];
           updatedData[arr]["quantity"] =
-            updatedData[arr]["quantity"] > 0
+            updatedData[arr]["quantity"] > 1
               ? updatedData[arr]["quantity"] - 1
               : 1;
           updatedData[arr]["total"] =
